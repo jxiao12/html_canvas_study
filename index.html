@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas Study Board</title>
+  </head>
+  <body>
+    <!-- Basic use of Canvas -->
+    <canvas id="tutorial" width="300" height="300"></canvas>
+    <!-- <canvas> has only two optional attributes: width and heigth attributes.
+    If the widht and height attributes are not set for <canvas>, the default
+    width is 300, height is 150, and the unit is px. Use the css property to set
+     the width and height, but if the width and height properties are
+     inconsistent with the initial ratio, it will be distorted. So, don't use
+     the css property to set the width and height of the <canvas>. -->
+
+
+     <!-- Browsers that support <canvas> will only render the <canvas> tag and
+     ignore the alternative content. Browsers that do not support <canvas> will
+     directly render alternative content. -->
+     <!-- example: -->
+     <!-- Two methods -->
+     <canvas id="canvas" width="300" height="300">
+       The Browsers cannot support canvas.
+     </canvas>
+     <canvas id="canvas" width="300" height="300">
+       <img src="path of img" alt="">
+     </canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>
